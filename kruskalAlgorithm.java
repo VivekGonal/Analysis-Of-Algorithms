@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-class krushalAlgorithm {
+class kruskalAlgorithm {
 // A class to represent a graph edge
 class Edge implements Comparable<Edge>
 {
@@ -118,7 +118,7 @@ public static void main(String[] args)
 {
 int V = 4; // Number of vertices in graph
 int E = 5; // Number of edges in graph
-krushalAlgorithm graph = new krushalAlgorithm(V, E);
+kruskalAlgorithm graph = new kruskalAlgorithm(V, E);
 // add edge 0-1
 graph.edge[0].src = 0;
 graph.edge[0].dest = 1;
