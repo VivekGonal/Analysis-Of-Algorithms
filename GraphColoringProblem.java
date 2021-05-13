@@ -104,23 +104,21 @@ public class GraphColoringProblem
     // driver program to test above function
     public static void main(String args[])
     {
-        mColoringProblem Coloring
-            = new mColoringProblem();
-        /* Create following graph and
-        test whether it is
-        3 colorable
-        (3)---(2)
-        | / |
-        | / |
-        | / |
-        (0)---(1)
-        */
+        GraphColoringProblem Coloring
+            = new GraphColoringProblem();
         int graph[][] = {
             { 0, 1, 1, 1 },
             { 1, 0, 1, 0 },
             { 1, 1, 0, 1 },
             { 1, 0, 1, 0 },
         };
+	System.out.println("Graph is: ");
+        for(int i=0;i<4;i++){
+            for(int j=0;j<4;j++){
+            System.out.print(graph[i][j]+" ");
+        }
+        System.out.println();
+    }
         int m = 3; // Number of colors
         Coloring.graphColoring(graph, m);
     }
